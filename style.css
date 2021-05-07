@@ -1,0 +1,32 @@
+header {
+  background: url(images/bg-pattern-intro.svg),
+    linear-gradient(90deg, rgba(255, 143, 112, 1) 10%, rgba(255, 61, 84, 1) 58%);
+  width: 1440px;
+  height: 500px;
+  margin: auto;
+  background-size: 3000px;
+  background-position: -359px -1296px;
+  border-radius: 0 0 0 75px;
+}
+
+body {
+  background-color: white;
+}
+/*Navigation*/
+li {
+  display: inline-block;
+}
+.mainNav {
+  display: inline-flex;
+}
+.subNav {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
