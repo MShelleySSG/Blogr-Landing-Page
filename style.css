@@ -1,32 +1,148 @@
-header {
-  background: url(images/bg-pattern-intro.svg),
-    linear-gradient(90deg, rgba(255, 143, 112, 1) 10%, rgba(255, 61, 84, 1) 58%);
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  font-family: "Overpass", "Ubuntu";
   width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: url(images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, right top, color-stop(10%, #ff8f70), color-stop(58%, #ff3d54));
+  background: url(images/bg-pattern-intro.svg), linear-gradient(90deg, #ff8f70 10%, #ff3d54 58%);
   height: 500px;
-  margin: auto;
+  margin: auto auto 50px;
   background-size: 3000px;
   background-position: -359px -1296px;
   border-radius: 0 0 0 75px;
+  color: white;
+  /*Navigation*/
 }
 
-body {
-  background-color: white;
-}
-/*Navigation*/
-li {
+header li {
   display: inline-block;
 }
-.mainNav {
-  display: inline-flex;
+
+header li > a {
+  text-decoration: none;
+  color: white;
 }
-.subNav {
+
+header .mainNav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+  margin-top: 30px;
+}
+
+header .subNav {
   display: none;
+}
+
+header .rightNav {
+  display: inline-block;
+  margin-left: 60%;
+  margin-top: 30px;
+}
+
+header .logo {
+  margin-left: 30px;
+}
+
+header p {
+  text-align: center;
+}
+
+header .mainHeading {
+  margin: 5% 0 0 30%;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+header .mainHeadingButtons {
+  display: inline-block;
+  margin-left: 45%;
+}
+
+header .btn {
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  height: 30px;
+}
+
+header .active {
+  background-color: white;
+}
+
+header span {
+  font-weight: bold;
+}
+
+header .active > span {
+  color: #ff525d;
+}
+
+/*body*/
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 0.2fr 1fr;
+      grid-template-rows: 0.2fr 1fr;
+  overflow: hidden;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+.content article {
+  margin-top: 50px;
+}
+
+.content h2 {
+  display: block;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.content h3 {
+  font-size: 24px;
+}
+
+.content h3:nth-child(1) {
+  margin-top: 25px;
+}
+
+.content img {
+  margin-left: 185px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  overflow: auto;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
+/*# sourceMappingURL=style.css.map */
