@@ -27,6 +27,7 @@ The designs were created to the following widths:
 Background gradient - Intro/CTA mobile nav:
 
 - Very light red: hsl(13, 100%, 72%)
+  #3f4160
 - Light red: hsl(353, 100%, 62%)
 
 Background gradient - body:
@@ -49,16 +50,6 @@ Background gradient - body:
 - Weights: 400, 500, 700
 
 Text:
-
-Introducing an extensible editor
-Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-change the looks of a blog.
-
-Robust content management
-Flexible content management enables users to easily move through posts. Increase the usability of your blog
-by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
 
 With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
 This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
