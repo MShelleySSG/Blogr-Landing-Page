@@ -45,8 +45,12 @@ header .rightNav {
   margin-top: 30px;
 }
 
+header .rightNav ul {
+  padding: 0;
+}
+
 header .logo {
-  margin-left: 30px;
+  padding-left: 50px;
 }
 
 header p {
@@ -107,6 +111,7 @@ section {
 
 .content article {
   margin-top: 50px;
+  padding-left: 100px;
 }
 
 .content h2 {
@@ -145,7 +150,6 @@ section {
 }
 
 #section2 {
-  display: block;
   width: 1440px;
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4160));
   background: linear-gradient(90deg, #2c2d3f, #3f4160);
@@ -157,6 +161,30 @@ section {
   height: 400px;
   background-position: -250px -500px;
   background-repeat: repeat-y;
+  color: white;
+}
+
+.infrastructure article {
+  width: 40%;
+  float: right;
+  padding-right: 150px;
+  padding-top: 75px;
+}
+
+.infrastructure article h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.infrastructure article p {
+  width: 80%;
+  line-height: 25px;
+}
+
+.infrastructure img {
+  position: relative;
+  top: -75px;
+  padding-left: 75px;
 }
 
 .attribution {
