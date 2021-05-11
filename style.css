@@ -91,6 +91,7 @@ header .active > span {
 }
 
 /*body*/
+/* Designed for the future section*/
 section {
   margin-bottom: 75px;
 }
@@ -149,11 +150,13 @@ section {
   margin-bottom: 100px;
 }
 
+/*Infrastructure Section */
 #section2 {
   width: 1440px;
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4160));
   background: linear-gradient(90deg, #2c2d3f, #3f4160);
   border-radius: 0 75px 0 75px;
+  margin-bottom: 100px;
 }
 
 .infrastructure {
@@ -185,6 +188,29 @@ section {
   position: relative;
   top: -75px;
   padding-left: 75px;
+}
+
+/*Free, open, simple section*/
+#section3 {
+  display: block;
+}
+
+#section3 img {
+  margin-left: -330px;
+}
+
+#section3 article {
+  width: 50%;
+  float: right;
+  padding-top: 175px;
+}
+
+#section3 article h3 {
+  font-size: 24px;
+}
+
+#section3 article p {
+  width: 80%;
 }
 
 .attribution {

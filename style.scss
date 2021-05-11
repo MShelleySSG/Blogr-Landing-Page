@@ -80,6 +80,8 @@ header {
 }
 
 /*body*/
+
+/* Designed for the future section*/
 section {
   margin-bottom: 75px;
 }
@@ -124,10 +126,13 @@ section {
   margin-bottom: 100px;
 }
 
+/*Infrastructure Section */
+
 #section2 {
   width: 1440px;
   background: linear-gradient(90deg, rgba(44, 45, 63, 1), rgba(63, 65, 96, 1));
   border-radius: 0 75px 0 75px;
+  margin-bottom: 100px;
 }
 .infrastructure {
   background: url(images/bg-pattern-circles.svg);
@@ -154,6 +159,28 @@ section {
     position: relative;
     top: -75px;
     padding-left: 75px;
+  }
+}
+
+/*Free, open, simple section*/
+
+#section3 {
+  display: block;
+
+  img {
+    margin-left: -330px;
+  }
+  article {
+    width: 50%;
+    float: right;
+    padding-top: 175px;
+
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      width: 80%;
+    }
   }
 }
 
