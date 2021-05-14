@@ -193,16 +193,17 @@ section {
 /*Free, open, simple section*/
 #section3 {
   display: block;
+  overflow: hidden;
 }
 
 #section3 img {
-  margin-left: -330px;
+  margin-left: -280px;
 }
 
 #section3 article {
   width: 50%;
   float: right;
-  padding-top: 175px;
+  padding-top: 150px;
 }
 
 #section3 article h3 {
@@ -211,6 +212,52 @@ section {
 
 #section3 article p {
   width: 80%;
+}
+
+/*Footer*/
+footer {
+  background-color: #25252d;
+  border-radius: 0 75px 0 0;
+}
+
+footer img {
+  padding-top: 50px;
+  padding-left: 125px;
+}
+
+footer .footerNav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  color: white;
+  margin-left: 25%;
+}
+
+footer .footerNav .footerColumn {
+  display: block;
+  margin-top: -65px;
+  margin-left: 100px;
+}
+
+footer .footerNav ul {
+  padding: 0;
+}
+
+footer .footerNav ul li {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  list-style-type: none;
+  line-height: 35px;
+}
+
+footer .footerNav ul li a {
+  color: white;
+  text-decoration: none;
+  color: #c8c8cb;
 }
 
 .attribution {

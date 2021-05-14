@@ -166,20 +166,61 @@ section {
 
 #section3 {
   display: block;
+  overflow: hidden;
 
   img {
-    margin-left: -330px;
+    margin-left: -280px;
   }
   article {
     width: 50%;
     float: right;
-    padding-top: 175px;
+    padding-top: 150px;
 
     h3 {
       font-size: 24px;
     }
     p {
       width: 80%;
+    }
+  }
+}
+
+/*Footer*/
+footer {
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 75px 0 0;
+
+  img {
+    padding-top: 50px;
+    padding-left: 125px;
+  }
+  .footerNav {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 1fr;
+    color: white;
+    margin-left: 25%;
+
+    .footerColumn {
+      display: block;
+      margin-top: -65px;
+      margin-left: 100px;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        grid-row: 1/2;
+        list-style-type: none;
+        line-height: 35px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          color: hsl(240, 2%, 79%);
+        }
+      }
     }
   }
 }
