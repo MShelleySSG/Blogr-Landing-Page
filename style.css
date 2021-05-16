@@ -16,45 +16,95 @@ header {
   border-radius: 0 0 0 75px;
   color: white;
   /*Navigation*/
+  /*Login & Signup buttons*/
+  /*Heading, description & buttons*/
 }
 
-header li {
-  display: inline-block;
+header .logo {
+  margin-right: 30px;
+  height: 42px;
 }
 
-header li > a {
-  text-decoration: none;
-  color: white;
-}
-
-header .mainNav {
+header .leftNav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  float: left;
-  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 35px;
+  padding-left: 50px;
 }
 
-header .subNav {
+header .leftNav li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+header .leftNav li a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+header .leftNav .dropdownMenu {
   display: none;
+  position: fixed;
+  padding-left: 0;
+  background-color: white;
+}
+
+header .leftNav .dropdownMenu li > a {
+  color: #4b5862;
+  font-weight: 400;
+}
+
+header #dropdown1:hover .dropdown > #subNav1 {
+  display: block;
+  padding: 20px;
+  margin-top: 0;
+}
+
+header #dropdown2:hover .dropdown > #subNav2 {
+  display: block;
+}
+
+header #dropdown3:hover .dropdown > #subNav3 {
+  display: block;
 }
 
 header .rightNav {
-  display: inline-block;
-  margin-left: 60%;
-  margin-top: 30px;
+  float: right;
+  margin-left: 30%;
+  margin-top: 20px;
 }
 
 header .rightNav ul {
   padding: 0;
 }
 
-header .logo {
-  padding-left: 50px;
+header .rightNav ul li {
+  display: inline-block;
 }
 
-header p {
-  text-align: center;
+header .rightNav ul .account-btn {
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  height: 30px;
+  padding: 10px 30px 25px 30px;
+}
+
+header .rightNav ul .account-btn span {
+  font-weight: bold;
+}
+
+header .rightNav ul .active {
+  background-color: white;
+  border: 1px solid white;
+  margin-right: 10px;
 }
 
 header .mainHeading {
@@ -66,7 +116,8 @@ header .mainHeading {
 
 header .mainHeadingButtons {
   display: inline-block;
-  margin-left: 45%;
+  margin-top: 25px;
+  margin-left: 42%;
 }
 
 header .btn {
@@ -76,27 +127,40 @@ header .btn {
   color: white;
   font-size: 14px;
   height: 30px;
+  padding: 10px 15px 25px 15px;
+  margin-right: 10px;
+}
+
+header .btn span {
+  font-weight: bold;
 }
 
 header .active {
   background-color: white;
-}
-
-header span {
-  font-weight: bold;
+  border: 1px solid white;
 }
 
 header .active > span {
   color: #ff525d;
 }
 
+header p {
+  text-align: center;
+}
+
 /*body*/
-/* Designed for the future section*/
-section {
+main {
+  margin-bottom: 150px;
+  /* Designed for the future section*/
+  /*Infrastructure Section */
+  /*Free, open, simple section*/
+}
+
+main section {
   margin-bottom: 75px;
 }
 
-.content {
+main .content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 60%;
@@ -106,16 +170,16 @@ section {
   overflow: hidden;
 }
 
-.content p {
+main .content p {
   font-size: 16px;
 }
 
-.content article {
+main .content article {
   margin-top: 50px;
   padding-left: 100px;
 }
 
-.content h2 {
+main .content h2 {
   display: block;
   text-align: center;
   margin: 100px auto 0 auto;
@@ -127,15 +191,15 @@ section {
   font-size: 30px;
 }
 
-.content h3 {
+main .content h3 {
   font-size: 24px;
 }
 
-.content h3:nth-child(1) {
+main .content h3:nth-child(1) {
   margin-top: 40px;
 }
 
-.content img {
+main .content img {
   margin-left: 185px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -146,12 +210,11 @@ section {
   overflow: auto;
 }
 
-.text {
+main .text {
   margin-bottom: 100px;
 }
 
-/*Infrastructure Section */
-#section2 {
+main #section2 {
   width: 1440px;
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4160));
   background: linear-gradient(90deg, #2c2d3f, #3f4160);
@@ -159,7 +222,7 @@ section {
   margin-bottom: 100px;
 }
 
-.infrastructure {
+main .infrastructure {
   background: url(images/bg-pattern-circles.svg);
   height: 400px;
   background-position: -250px -500px;
@@ -167,50 +230,49 @@ section {
   color: white;
 }
 
-.infrastructure article {
+main .infrastructure article {
   width: 40%;
   float: right;
   padding-right: 150px;
   padding-top: 75px;
 }
 
-.infrastructure article h2 {
+main .infrastructure article h2 {
   font-size: 30px;
   font-weight: 600;
 }
 
-.infrastructure article p {
+main .infrastructure article p {
   width: 80%;
   line-height: 25px;
 }
 
-.infrastructure img {
+main .infrastructure img {
   position: relative;
   top: -75px;
   padding-left: 75px;
 }
 
-/*Free, open, simple section*/
-#section3 {
+main #section3 {
   display: block;
   overflow: hidden;
 }
 
-#section3 img {
+main #section3 img {
   margin-left: -280px;
 }
 
-#section3 article {
+main #section3 article {
   width: 50%;
   float: right;
   padding-top: 150px;
 }
 
-#section3 article h3 {
+main #section3 article h3 {
   font-size: 24px;
 }
 
-#section3 article p {
+main #section3 article p {
   width: 80%;
 }
 
@@ -218,6 +280,7 @@ section {
 footer {
   background-color: #25252d;
   border-radius: 0 75px 0 0;
+  padding-bottom: 50px;
 }
 
 footer img {

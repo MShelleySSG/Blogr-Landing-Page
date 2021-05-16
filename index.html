@@ -9,43 +9,46 @@
 </head>
 <body>
   <header>
-    <nav class="mainNav">
-      <img class="logo" src="images/logo.svg" alt="blogr-landing-page">
-      <ul>
-        <li><a href="#">Product<img src="images/icon-arrow-light.svg"></a></li>
-        <nav class="subNav">
-          <ul>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Integrations</a></li>  
-          </ul>
-        </nav>
-        <li><a href="#">Company<img src="images/icon-arrow-light.svg"></a></li>
-        <nav class="subNav">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </nav>
-        <li><a href="#">Connect<img src="images/icon-arrow-light.svg"></a></li>
-        <nav class="subNav">
-          <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </nav>
-      </ul>
-    </nav>
-    <nav class="rightNav">
-      <ul>
-        <li><button type="button" class="btn"><span>Login</span></button></li>
-        <li><button type="button" class="btn active"><span>Sign Up</span></button></li>
-      </ul>
+    <nav>
+      <div class="leftNav">
+        <img class="logo" src="images/logo.svg" alt="blogr-landing-page">
+        <li id="dropdown1" class="mainNavHeading"><a href="#">Product<img src="images/icon-arrow-light.svg"></a>
+          <div class="dropdown">
+            <ul id="subNav1" class="dropdownMenu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>  
+            </ul>
+          </div>
+        </li>
+        <li id="dropdown2" class="mainNavHeading"><a href="#">Company<img src="images/icon-arrow-light.svg"></a>
+          <div class="dropdown">
+            <ul id="subNav2" class="dropdownMenu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="dropdown3" class="mainNavHeading"><a href="#">Connect<img src="images/icon-arrow-light.svg"></a>
+          <div class="dropdown">
+            <ul id="subNav3" class="dropdownMenu">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
+      <div class="rightNav">
+        <ul>
+          <li><button type="button" class="account-btn"><span>Login</span></button></li>
+          <li><button type="button" class="account-btn active"><span>Sign Up</span></button></li>
+        </ul>
+      </div>
     </nav>
    
     <h1 class="mainHeading">A modern publishing platform</h1>
@@ -110,8 +113,7 @@
           <li><a href= "#">Features</a></li>
           <li><a href= "#">Integrations</a></li>
         </ul>
-      </nav>
-      <div>
+     </nav>
       <nav class="footerColumn">
         <h4>Company</h4>
         <ul>
@@ -120,8 +122,7 @@
           <li><a href= "#">Blog</a></li>
           <li><a href= "#">Careers</a></li>
         </ul>
-      </nav>
-    </div>
+    </nav>
       <nav class="footerColumn">
         <h4>Connect</h4>
         <ul>
@@ -129,7 +130,7 @@
           <li><a href= "#">Newsletter</a></li>
           <li><a href= "#">LinkedIn</a></li>
         </ul>
-      </nav>
+    </nav>
     </div>
   </footer>
   <div class="attribution">
