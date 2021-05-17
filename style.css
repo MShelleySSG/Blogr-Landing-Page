@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 :root {
   font-family: "Overpass", "Ubuntu";
-  width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11,8 +10,8 @@ header {
   background: url(images/bg-pattern-intro.svg), linear-gradient(90deg, #ff8f70 10%, #ff3d54 58%);
   height: 500px;
   margin: auto auto 75px;
-  background-size: 3000px;
-  background-position: -359px -1296px;
+  background-size: 3100px;
+  background-position: -351px -1346px;
   border-radius: 0 0 0 75px;
   color: white;
   /*Navigation*/
@@ -20,8 +19,16 @@ header {
   /*Heading, description & buttons*/
 }
 
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
 header .logo {
-  margin-right: 30px;
+  margin-left: 100px;
+  margin-right: 50px;
   height: 42px;
 }
 
@@ -32,13 +39,16 @@ header .leftNav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 35px;
   padding-left: 50px;
+}
+
+header .leftNav .mainNavHeading {
+  padding: 20px 0;
+  margin-right: 75px;
 }
 
 header .leftNav li {
   list-style: none;
-  margin-right: 20px;
 }
 
 header .leftNav li a {
@@ -50,19 +60,25 @@ header .leftNav li a {
 header .leftNav .dropdownMenu {
   display: none;
   position: fixed;
-  padding-left: 0;
+  margin-top: 0.5rem;
+  margin-left: -25px;
+  padding: 5px 50px 5px 5px;
+  line-height: 1.5;
   background-color: white;
 }
 
-header .leftNav .dropdownMenu li > a {
+header .leftNav .dropdownMenu li {
+  padding-top: 10px;
+}
+
+header .leftNav .dropdownMenu li a {
   color: #4b5862;
   font-weight: 400;
+  margin-left: 20px;
 }
 
 header #dropdown1:hover .dropdown > #subNav1 {
   display: block;
-  padding: 20px;
-  margin-top: 0;
 }
 
 header #dropdown2:hover .dropdown > #subNav2 {
@@ -74,9 +90,7 @@ header #dropdown3:hover .dropdown > #subNav3 {
 }
 
 header .rightNav {
-  float: right;
-  margin-left: 30%;
-  margin-top: 20px;
+  margin-left: 28%;
 }
 
 header .rightNav ul {
@@ -215,7 +229,6 @@ main .text {
 }
 
 main #section2 {
-  width: 1440px;
   background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4160));
   background: linear-gradient(90deg, #2c2d3f, #3f4160);
   border-radius: 0 75px 0 75px;

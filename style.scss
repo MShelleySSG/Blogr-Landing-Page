@@ -2,7 +2,6 @@
 
 :root {
   font-family: "Overpass", "Ubuntu";
-  width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,24 +11,33 @@ header {
     linear-gradient(90deg, rgba(255, 143, 112, 1) 10%, rgba(255, 61, 84, 1) 58%);
   height: 500px;
   margin: auto auto 75px;
-  background-size: 3000px;
-  background-position: -359px -1296px;
+  background-size: 3100px;
+  background-position: -351px -1346px;
   border-radius: 0 0 0 75px;
   color: white;
 
   /*Navigation*/
+  nav {
+    display: flex;
+    padding-top: 20px;
+  }
   .logo {
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
     height: 42px;
   }
   .leftNav {
     display: inline-flex;
     align-items: center;
-    padding-top: 35px;
     padding-left: 50px;
+
+    .mainNavHeading {
+      padding: 20px 0;
+      margin-right: 75px;
+    }
     li {
       list-style: none;
-      margin-right: 20px;
+
       a {
         color: white;
         text-decoration: none;
@@ -39,19 +47,25 @@ header {
     .dropdownMenu {
       display: none;
       position: fixed;
-      padding-left: 0;
+      margin-top: 0.5rem;
+      margin-left: -25px;
+      padding: 5px 50px 5px 5px;
+      line-height: 1.5;
       background-color: white;
 
-      li > a {
-        color: hsl(207, 13%, 34%);
-        font-weight: 400;
+      li {
+        padding-top: 10px;
+
+        a {
+          color: hsl(207, 13%, 34%);
+          font-weight: 400;
+          margin-left: 20px;
+        }
       }
     }
   }
   #dropdown1:hover .dropdown > #subNav1 {
     display: block;
-    padding: 20px;
-    margin-top: 0;
   }
   #dropdown2:hover .dropdown > #subNav2 {
     display: block;
@@ -62,9 +76,7 @@ header {
   /*Login & Signup buttons*/
 
   .rightNav {
-    float: right;
-    margin-left: 30%;
-    margin-top: 20px;
+    margin-left: 28%;
 
     ul {
       padding: 0;
@@ -186,7 +198,6 @@ main {
   /*Infrastructure Section */
 
   #section2 {
-    width: 1440px;
     background: linear-gradient(
       90deg,
       rgba(44, 45, 63, 1),
