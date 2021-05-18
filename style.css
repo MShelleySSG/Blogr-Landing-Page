@@ -63,16 +63,18 @@ header .leftNav li a {
 
 header .leftNav .dropdownMenu {
   display: none;
-  position: fixed;
+  position: absolute;
   margin-top: 0.5rem;
-  margin-left: -25px;
-  padding: 5px 50px 5px 5px;
+  margin-left: -30px;
+  padding: 5px 55px 15px 5px;
+  min-width: 117px;
   line-height: 1.5;
   background-color: white;
 }
 
 header .leftNav .dropdownMenu li {
   padding-top: 10px;
+  font-family: "ubuntu";
 }
 
 header .leftNav .dropdownMenu li a {
@@ -81,37 +83,24 @@ header .leftNav .dropdownMenu li a {
   margin-left: 20px;
 }
 
-header #dropdown1:hover .dropdown > #subNav1 {
+header .mainNavHeading:hover .dropdown > .dropdownMenu {
   display: block;
 }
 
-header #dropdown2:hover .dropdown > #subNav2 {
-  display: block;
-}
-
-header #dropdown3:hover .dropdown > #subNav3 {
-  display: block;
-}
-
-header #dropdown1:hover a > .arrow-image {
+header .mainNavHeading:hover a > .arrow-image {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-header #dropdown2:hover a > .arrow-image {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+header .mainNavHeading:hover > a {
+  text-decoration: underline;
 }
 
-header #dropdown3:hover a > .arrow-image {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+header .dropdownMenu > li > a:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 header .rightNav {
@@ -179,12 +168,37 @@ header .active {
   border: 1px solid white;
 }
 
+header .start {
+  color: #ff525d;
+  background-color: white;
+}
+
 header .active > span {
   color: #ff525d;
 }
 
 header p {
   text-align: center;
+}
+
+header .start:hover,
+header .signUp:hover,
+header .signUp:hover > span {
+  background-color: transparent !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+header .learn:hover {
+  color: #ff525d;
+  background-color: white;
+  cursor: pointer;
+}
+
+header .login:hover > span {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*body*/
