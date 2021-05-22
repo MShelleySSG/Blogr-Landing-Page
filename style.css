@@ -135,6 +135,10 @@ header .rightNav ul .active {
   margin-right: 10px;
 }
 
+header .rightNav .hamburgerIcon {
+  display: none;
+}
+
 header .mainHeading {
   margin: 5% 0 0 30%;
   display: inline-block;
@@ -382,5 +386,54 @@ footer .footerNav ul li a {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 415px) {
+  html,
+  body {
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  header {
+    background-size: 1250px;
+    background-position: -301px -1546px;
+  }
+  header .leftNav {
+    padding-left: 30px;
+  }
+  header .leftNav .logo {
+    margin-left: 0;
+  }
+  header .mainNavHeading {
+    display: none;
+  }
+  header .rightNav {
+    margin-left: 30%;
+  }
+  header .rightNav .account-btn {
+    display: none;
+  }
+  header .rightNav .hamburgerIcon {
+    display: block;
+  }
+  header .headings {
+    text-align: center;
+    margin: 45px 0 0 0;
+    padding: 0 30px;
+  }
+  header .headings .mainHeading {
+    font-size: 35px;
+    margin: 0;
+  }
+  header .mainHeadingButtons {
+    margin-left: 15%;
+  }
+  header .mainHeadingButtons .btn {
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 15px 25px 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

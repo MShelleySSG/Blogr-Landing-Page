@@ -115,6 +115,9 @@ header {
         margin-right: 10px;
       }
     }
+    .hamburgerIcon {
+      display: none;
+    }
   }
 
   /*Heading, description & buttons*/
@@ -339,4 +342,54 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 415px) {
+  html,
+  body {
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  header {
+    background-size: 1250px;
+    background-position: -301px -1546px;
+    .leftNav {
+      padding-left: 30px;
+
+      .logo {
+        margin-left: 0;
+      }
+    }
+    .mainNavHeading {
+      display: none;
+    }
+    .rightNav {
+      margin-left: 30%;
+      .account-btn {
+        display: none;
+      }
+      .hamburgerIcon {
+        display: block;
+      }
+    }
+    .headings {
+      text-align: center;
+      margin: 45px 0 0 0;
+      padding: 0 30px;
+      .mainHeading {
+        font-size: 35px;
+        margin: 0;
+      }
+    }
+    .mainHeadingButtons {
+      margin-left: 15%;
+      .btn {
+        height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
+        padding: 15px 15px 25px 15px;
+      }
+    }
+  }
 }
