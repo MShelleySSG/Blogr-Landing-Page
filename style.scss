@@ -19,6 +19,7 @@ header {
   /*Navigation*/
   nav {
     display: flex;
+    justify-content: space-between;
     padding-top: 20px;
   }
   .logo {
@@ -88,7 +89,7 @@ header {
   /*Login & Signup buttons*/
 
   .rightNav {
-    margin-left: 23%;
+    margin-right: 12%;
 
     ul {
       padding: 0;
@@ -121,17 +122,21 @@ header {
   }
 
   /*Heading, description & buttons*/
-
+  #headerText {
+    width: 50%;
+    margin: auto;
+  }
+  .headings {
+    text-align: center;
+  }
   .mainHeading {
-    margin: 5% 0 0 30%;
-    display: inline-block;
     font-weight: 600;
     font-size: 45px;
+    margin-bottom: 20px;
   }
   .mainHeadingButtons {
-    display: inline-block;
-    margin-top: 25px;
-    margin-left: 42%;
+    margin-top: 50px;
+    text-align: center;
   }
   .btn {
     border-radius: 20px;
@@ -229,6 +234,9 @@ main {
       overflow: auto;
     }
   }
+  #illustrationEditorMobile {
+    display: none;
+  }
   .text {
     margin-bottom: 100px;
   }
@@ -293,6 +301,9 @@ main {
         width: 80%;
       }
     }
+    #laptopMobileImg {
+      display: none;
+    }
   }
 }
 /*Footer*/
@@ -354,6 +365,7 @@ footer {
   header {
     background-size: 1250px;
     background-position: -301px -1546px;
+    margin: 0;
     .leftNav {
       padding-left: 30px;
 
@@ -381,6 +393,9 @@ footer {
         font-size: 35px;
         margin: 0;
       }
+      p {
+        font-size: 18px;
+      }
     }
     .mainHeadingButtons {
       margin-left: 15%;
@@ -389,6 +404,30 @@ footer {
         border-radius: 50px;
         font-size: 16px;
         padding: 15px 15px 25px 15px;
+      }
+    }
+  }
+  main {
+    #section1 #section2 #section3 {
+      text-align: center;
+    }
+    #illustrationEditorDesktop,
+    #laptopDesktopImg {
+      display: none;
+    }
+    #illustrationEditorMobile,
+    #laptopMobileImg {
+      display: block;
+    }
+    .content {
+      grid-template-rows: 0.1fr 0.2fr 1fr;
+      img {
+        margin-left: 0;
+        grid-column-start: 1;
+        grid-row-start: 2;
+      }
+      article {
+        grid-row-start: 3;
       }
     }
   }
