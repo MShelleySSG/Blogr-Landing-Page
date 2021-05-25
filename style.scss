@@ -40,16 +40,16 @@ header {
         padding: 20px 0;
         margin-right: 75px;
       }
-      .arrow-image {
+      .arrow-image-light {
         margin-left: 5px;
       }
-      li {
+      li,
+      a {
         list-style: none;
 
         a {
           color: white;
           text-decoration: none;
-          list-style: none;
         }
       }
       .dropdownMenu {
@@ -78,7 +78,7 @@ header {
       display: block;
     }
 
-    .mainNavHeading:hover a > .arrow-image {
+    .mainNavHeading:hover a > .arrow-image-light {
       transform: rotate(180deg);
       transition: 0.6s;
     }
@@ -91,7 +91,9 @@ header {
       cursor: pointer;
     }
     /*Login & Signup buttons*/
-
+    .line {
+      display: none;
+    }
     .rightNav {
       margin-right: 12%;
 
@@ -324,7 +326,7 @@ footer {
   }
   .footerNav {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: repeat(3, 25%);
     grid-template-rows: 1fr;
     color: white;
     margin-left: 25%;
@@ -384,16 +386,53 @@ footer {
         background: white;
         width: 80%;
         top: 100px;
-        left: 10%;
+        left: 5%;
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
         .leftNav {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          > li > a {
-            color: black;
+          width: 100%;
+          padding: 0;
+          .mainNavHeading {
+            margin-right: 0;
+            width: 100%;
+          }
+          .mainNavHeading > a {
+            font-size: 18px;
+            color: hsl(208, 49%, 24%);
+            font-weight: 700;
+            text-decoration: none;
+            .arrow-image-dark {
+              margin-left: 5px;
+            }
+            .arrow-image-light {
+              display: none;
+            }
           }
         }
+        .dropdownMenu {
+          background-color: #f5efef;
+          width: 80%;
+          margin-left: 10px;
+          padding: 0 0 20px;
+
+          li > a {
+            margin-left: 0;
+            color: hsl(208, 49%, 24%);
+            font-family: "overpass";
+            font-weight: 600;
+          }
+        }
+        .line {
+          display: block;
+          border-top: 1px solid #f5efef;
+          width: 90%;
+        }
         .rightNav {
+          margin-right: 0;
           ul {
             display: flex;
             flex-direction: column;
@@ -404,7 +443,27 @@ footer {
             display: block;
           }
           .login {
-            color: black;
+            color: hsl(208, 49%, 24%);
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "overpass";
+            margin-bottom: 10px;
+          }
+          .signUp {
+            background: linear-gradient(
+              90deg,
+              rgba(255, 143, 112, 1) 10%,
+              rgba(255, 61, 84, 1) 58%
+            );
+            font-size: 18px;
+            font-family: "overpass";
+            margin-right: 0;
+            height: 50px;
+            border-radius: 100px;
+            padding-top: 15px;
+            span {
+              color: white;
+            }
           }
         }
       }

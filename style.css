@@ -58,18 +58,19 @@ header .topContainer .leftNav .mainNavHeading {
   margin-right: 75px;
 }
 
-header .topContainer .leftNav .arrow-image {
+header .topContainer .leftNav .arrow-image-light {
   margin-left: 5px;
 }
 
-header .topContainer .leftNav li {
+header .topContainer .leftNav li,
+header .topContainer .leftNav a {
   list-style: none;
 }
 
-header .topContainer .leftNav li a {
+header .topContainer .leftNav li a,
+header .topContainer .leftNav a a {
   color: white;
   text-decoration: none;
-  list-style: none;
 }
 
 header .topContainer .leftNav .dropdownMenu {
@@ -98,7 +99,7 @@ header .topContainer .mainNavHeading:hover .dropdown > .dropdownMenu {
   display: block;
 }
 
-header .topContainer .mainNavHeading:hover a > .arrow-image {
+header .topContainer .mainNavHeading:hover a > .arrow-image-light {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: 0.6s;
@@ -112,6 +113,10 @@ header .topContainer .mainNavHeading:hover > a {
 header .topContainer .dropdownMenu > li > a:hover {
   font-weight: 600;
   cursor: pointer;
+}
+
+header .topContainer .line {
+  display: none;
 }
 
 header .topContainer .rightNav {
@@ -375,8 +380,8 @@ footer img {
 footer .footerNav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25%;
-      grid-template-columns: 25% 25% 25%;
+  -ms-grid-columns: (25%)[3];
+      grid-template-columns: repeat(3, 25%);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   color: white;
@@ -443,7 +448,11 @@ footer .footerNav ul li a {
     background: white;
     width: 80%;
     top: 100px;
-    left: 10%;
+    left: 5%;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
   }
   header .topContainer .navContainer .leftNav {
     display: -webkit-box;
@@ -453,12 +462,44 @@ footer .footerNav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
+    padding: 0;
   }
-  header .topContainer .navContainer .leftNav > li > a {
-    color: black;
+  header .topContainer .navContainer .leftNav .mainNavHeading {
+    margin-right: 0;
+    width: 100%;
+  }
+  header .topContainer .navContainer .leftNav .mainNavHeading > a {
+    font-size: 18px;
+    color: #1f3f5b;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  header .topContainer .navContainer .leftNav .mainNavHeading > a .arrow-image-dark {
+    margin-left: 5px;
+  }
+  header .topContainer .navContainer .leftNav .mainNavHeading > a .arrow-image-light {
+    display: none;
+  }
+  header .topContainer .navContainer .dropdownMenu {
+    background-color: #f5efef;
+    width: 80%;
+    margin-left: 10px;
+    padding: 0 0 20px;
+  }
+  header .topContainer .navContainer .dropdownMenu li > a {
+    margin-left: 0;
+    color: #1f3f5b;
+    font-family: "overpass";
+    font-weight: 600;
+  }
+  header .topContainer .navContainer .line {
+    display: block;
+    border-top: 1px solid #f5efef;
+    width: 90%;
+  }
+  header .topContainer .navContainer .rightNav {
+    margin-right: 0;
   }
   header .topContainer .navContainer .rightNav ul {
     display: -webkit-box;
@@ -476,7 +517,24 @@ footer .footerNav ul li a {
     display: block;
   }
   header .topContainer .navContainer .rightNav .login {
-    color: black;
+    color: #1f3f5b;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "overpass";
+    margin-bottom: 10px;
+  }
+  header .topContainer .navContainer .rightNav .signUp {
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ff8f70), color-stop(58%, #ff3d54));
+    background: linear-gradient(90deg, #ff8f70 10%, #ff3d54 58%);
+    font-size: 18px;
+    font-family: "overpass";
+    margin-right: 0;
+    height: 50px;
+    border-radius: 100px;
+    padding-top: 15px;
+  }
+  header .topContainer .navContainer .rightNav .signUp span {
+    color: white;
   }
   header .topContainer .hamburgerIcon {
     display: block;
