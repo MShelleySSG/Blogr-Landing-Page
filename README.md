@@ -1,4 +1,4 @@
-#Junior Implementation Specialist - Coding Challenge - Section #1
+# Junior Implementation Specialist - Coding Challenge - Section #1
 
 To get started with this challenge, copy this repository to your own repository using the "Fork" icon in the top right. 
 
