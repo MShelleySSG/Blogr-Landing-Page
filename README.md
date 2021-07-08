@@ -1,8 +1,6 @@
 # Junior Implementation Specialist - Coding Challenge - Section #1
 
-To get started with this challenge, copy this repository to your own repository using the "Fork" icon in the top right. 
-
-You can then download the code to your machine by clicking on the code button then click "Download Zip".
+To get started with this challenge, copy this repository to your own repository using the "Fork" icon in the top right.
 
 Once you've completed the tasks from the doc and you're happy with your code, re-upload the files you've changed by clicking on the "Add file" button and select "Upload files".
 
