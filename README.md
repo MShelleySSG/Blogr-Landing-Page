@@ -1,4 +1,4 @@
-# Junior Implementation Specialist - Coding Challenge - Section #1
+# Junior Implementation Specialist - Coding Challenge
 
 To get started with this challenge, download the files by clicking on Code, then download Zip. Then create your own repository within your own account.
 
